@@ -1,22 +1,20 @@
 <p align="center">
-  <a href="https://github.com/tejashreebadve">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1120,50:7C3AED,100:22D3EE&height=180&section=header&text=Hello!%20I'm%20Tejashree&fontColor=FFFFFF&fontSize=48&fontAlignY=38&desc=Data%20%26%20AI%20Engineer&descSize=18&descAlignY=60&descColor=E2E8F0" alt="Hello! I'm Tejashree" />
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6D28D9,100:0891B2&height=170&section=header&text=Hello%2C%20I%27m%20Tejashree&fontColor=FFFFFF&fontSize=44&fontAlignY=36&desc=Data%20%26%20AI%20Engineer&descSize=18&descAlignY=56&descColor=E0F2FE" alt="Hello, I'm Tejashree" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=22D3EE&center=true&vCenter=true&width=900&height=44&lines=Pipelines+that+scale%2C+models+that+ship;Medallion+architecture+by+day%2C+multi-agent+systems+by+night;Lakehouses+and+the+agents+that+query+them" alt="Typing headlines" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1400&color=6D28D9&center=true&vCenter=true&width=700&height=40&lines=Pipelines+that+scale%2C+models+that+ship;Lakehouses+and+the+agents+that+query+them;Medallion+by+day%2C+multi-agent+by+night" alt="Typing headlines" />
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/tejashree-badve/"><img src="https://img.shields.io/badge/LinkedIn-7C3AED?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-7C3AED?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <img src="https://komarev.com/ghpvc/?username=tejashreebadve&style=flat-square&color=22D3EE&label=Profile+Views" alt="Profile views" />
+  <a href="https://www.linkedin.com/in/tejashree-badve/"><img src="https://img.shields.io/badge/LinkedIn-6D28D9?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:tejashreekishorbadve@gmail.com"><img src="https://img.shields.io/badge/Email-0891B2?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <img src="https://komarev.com/ghpvc/?username=tejashreebadve&style=flat-square&color=6D28D9&label=Profile+Views" alt="Profile views" />
 </p>
 
 ---
 
-## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="28"> &nbsp;About Me
+## 🧠 &nbsp;About Me
 
 Data and AI Engineer. Six years across banking, insurance, and healthcare. Currently working where data meets LLMs: retrieval, agent orchestration, and the schema discipline both depend on. Databricks and Snowflake for the platform, LangGraph and QLoRA for the layer above it.
 
@@ -27,6 +25,8 @@ ask_me_about:         Spark architecture, when RAG is the wrong answer, fine-tun
 based_in:             San Jose, CA
 ```
 
+> Every failed agent I have debugged failed at the data layer, not the model layer.
+
 ---
 
 ## 🧩 &nbsp;Featured Projects
@@ -35,48 +35,60 @@ based_in:             San Jose, CA
 <tr>
 <td width="50%" valign="top">
 
-### 🤖 AI-Native HR Platform
-Multi-agent hiring system built on LangGraph, with four open-weight models fine-tuned via QLoRA and served through vLLM.
+### 🤖 &nbsp;Hiring Agents That Read Between the Lines
 
-`LangGraph` `QLoRA` `vLLM` `Qdrant` `FastAPI`
+A LangGraph multi-agent system for end-to-end recruiting: resume screening, structured extraction, and natural-language querying over candidate data.
 
-**99%** shortlisting accuracy &nbsp;·&nbsp; **73%** NL-to-SQL exact match &nbsp;·&nbsp; **sub-4s** latency
+Four open-weight models (Gemma 2, Llama 3.1, Qwen 2.5, Mistral) fine-tuned with QLoRA on 4-bit NF4 quantization, benchmarked head to head, then served through vLLM with paged attention for throughput. Retrieval runs on Qdrant with hybrid search; state moves between agents as a typed graph so failures are traceable to a node instead of a prompt.
+
+`LangGraph` `QLoRA` `vLLM` `Qdrant` `FastAPI` `Supabase`
+
+**99%** shortlisting accuracy &nbsp;·&nbsp; **73%** NL-to-SQL exact match &nbsp;·&nbsp; **<4s** p95 latency
 
 </td>
 <td width="50%" valign="top">
 
-### 🔍 Multimodal RAG Pipeline
-Hybrid retrieval over text and images with cross-encoder reranking, built for a macroeconomics QA benchmark.
+### 🔍 &nbsp;Retrieval That Survives Bad Questions
 
-`FAISS` `BM25` `CLIP` `LLaMA 3` `Groq`
+A multimodal RAG pipeline for macroeconomics QA, where the answer often lives in a chart rather than the surrounding text.
 
-Kaggle score improved from **0.28 to 0.42**
+Dense FAISS vectors fused with BM25 lexical scores to catch the exact-figure queries embeddings miss, CLIP embeddings to bring chart images into the same retrieval space, and a cross-encoder reranking pass over the top-k before generation. Inference served by LLaMA 3 on Groq to keep the reranking budget affordable.
+
+`FAISS` `BM25` `CLIP` `Cross-Encoder` `LLaMA 3` `Groq`
+
+Benchmark score lifted **0.28 → 0.42**
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### ⚡ Lakehouse Optimization
-Risk-reporting workloads rewritten around partitioning and shuffle behavior, plus a Snowflake migration of 70M+ records.
+### ⚡ &nbsp;Eight Hours to Under Three
 
-`PySpark` `Databricks` `Snowflake` `Autosys`
+Risk and liquidity reporting for a derivatives book, rebuilt around how Spark actually moves data rather than how the DAG looked on paper.
 
-Batch runtime cut from **8 hours to under 3**
+Diagnosed skew from the physical plan, repartitioned on a salted join key, replaced wide shuffles with broadcast joins where cardinality allowed, and cached the reused intermediate frames. Paired with a Snowflake migration of 70M+ records and Autosys orchestration for the nightly window.
+
+`PySpark` `Databricks` `Delta Lake` `Snowflake` `Autosys`
+
+Batch runtime **8h → <3h**
 
 </td>
 <td width="50%" valign="top">
 
-### ✈️ Aerive
-Distributed travel booking platform built as event-driven microservices with polyglot persistence.
+### 🏥 &nbsp;A Lakehouse Fluent in Healthcare
 
-`Node.js` `React` `MongoDB` `PostgreSQL` `Kafka`
+A Medallion-architecture platform on Snowflake for pharmacy benefit and claims data, built so clinical coding stays queryable instead of collapsing into strings.
+
+Bronze ingestion from PBM APIs, silver standardization of 835/837 EDI plus SNOMED CT, CPT, LOINC, and ICD-10 vocabularies, gold star schemas modeled in dbt and orchestrated by Airflow. Power BI semantic models sit on top in Direct Lake mode, with a Microsoft Fabric Copilot agent for self-serve questions.
+
+`Snowflake` `dbt` `Airflow` `Microsoft Fabric` `Power BI`
+
+HIPAA-aligned &nbsp;·&nbsp; oncology and RLT domain
 
 </td>
 </tr>
 </table>
-
-<p align="center"><i>Pinned repositories below have the code and write-ups.</i></p>
 
 ---
 
@@ -92,7 +104,7 @@ Distributed travel booking platform built as event-driven microservices with pol
   <img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white" />
 </p>
 
-**Data Platforms & Processing**
+**Data Platforms and Processing**
 
 <p>
   <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white" />
@@ -105,20 +117,20 @@ Distributed travel booking platform built as event-driven microservices with pol
   <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" />
 </p>
 
-**AI & ML**
+**AI and ML**
 
 <p>
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
   <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white" />
   <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" />
-  <img src="https://img.shields.io/badge/vLLM-7C3AED?style=flat-square&logo=lightning&logoColor=white" />
+  <img src="https://img.shields.io/badge/vLLM-6D28D9?style=flat-square&logo=lightning&logoColor=white" />
   <img src="https://img.shields.io/badge/Qdrant-DC244C?style=flat-square&logo=qdrant&logoColor=white" />
   <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white" />
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
   <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
 </p>
 
-**Cloud & Infrastructure**
+**Cloud and Infrastructure**
 
 <p>
   <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
@@ -131,7 +143,7 @@ Distributed travel booking platform built as event-driven microservices with pol
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
 </p>
 
-**Analytics & BI**
+**Analytics and BI**
 
 <p>
   <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" />
@@ -145,20 +157,16 @@ Distributed travel booking platform built as event-driven microservices with pol
 ## 📊 &nbsp;GitHub Activity
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=tejashreebadve&show_icons=true&hide_border=true&bg_color=00000000&title_color=22D3EE&icon_color=7C3AED&text_color=94A3B8&include_all_commits=true" alt="stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejashreebadve&layout=compact&hide_border=true&bg_color=00000000&title_color=22D3EE&text_color=94A3B8&langs_count=8" alt="top langs" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=tejashreebadve&show_icons=true&hide_border=true&bg_color=00000000&title_color=6D28D9&icon_color=0891B2&text_color=64748B&include_all_commits=true" alt="GitHub stats" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejashreebadve&layout=compact&hide_border=true&bg_color=00000000&title_color=6D28D9&text_color=64748B&langs_count=8" alt="Top languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tejashreebadve&bg_color=00000000&color=94A3B8&line=7C3AED&point=22D3EE&area=true&area_color=7C3AED&hide_border=true" alt="activity graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tejashreebadve&bg_color=00000000&color=64748B&line=6D28D9&point=0891B2&area=true&area_color=6D28D9&hide_border=true" alt="Contribution activity" />
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev quote" />
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,50:7C3AED,100:0B1120&height=110&section=footer" alt="footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0891B2,100:6D28D9&height=110&section=footer" alt="footer" />
 </p>
