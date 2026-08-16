@@ -1,5 +1,7 @@
+<h1 align="center">Hello, I'm Tejashree</h1>
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6D28D9,100:0891B2&height=170&section=header&text=Hello%2C%20I%27m%20Tejashree&fontColor=FFFFFF&fontSize=44&fontAlignY=36&desc=Data%20%26%20AI%20Engineer&descSize=18&descAlignY=56&descColor=E0F2FE" alt="Hello, I'm Tejashree" />
+  <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=6D28D9&fontSize=40&height=80&width=700&text=Data%20and%20AI%20Engineer" alt="Data and AI Engineer" />
 </p>
 
 <p align="center">
@@ -168,5 +170,5 @@ HIPAA-aligned &nbsp;·&nbsp; oncology and RLT domain
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0891B2,100:6D28D9&height=110&section=footer" alt="footer" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=6D28D9&height=4&section=footer" alt="footer" />
 </p>
