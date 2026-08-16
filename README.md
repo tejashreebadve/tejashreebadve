@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero.svg" width="900" alt="Tejashree Badve, Data and AI Engineer" />
+  <img src="./assets/terminal.svg" width="900" alt="Terminal session: Tejashree Badve, Data and AI Engineer" />
 </p>
 
 <p align="center">
