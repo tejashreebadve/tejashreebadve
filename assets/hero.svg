@@ -1,1 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-label="Tejashree Badve, Data and AI Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="55%" stop-color="#181F3A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#94A3B8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
 
+  <rect width="900" height="260" rx="14" fill="url(#bg)"/>
+
+  <g stroke="#334155" stroke-opacity="0.35" stroke-width="1">
+    <path d="M0 60 H900 M0 130 H900 M0 200 H900"/>
+    <path d="M180 0 V260 M360 0 V260 M540 0 V260 M720 0 V260"/>
+  </g>
+
+  <g opacity="0.5">
+    <circle cx="180" cy="60" r="3.5" fill="#F59E0B"/>
+    <circle cx="360" cy="130" r="3.5" fill="#F59E0B"/>
+    <circle cx="540" cy="130" r="3.5" fill="#38BDF8"/>
+    <circle cx="720" cy="200" r="3.5" fill="#38BDF8"/>
+    <path d="M180 60 L360 130 L540 130 L720 200" fill="none" stroke="url(#fade)" stroke-width="1.5"/>
+  </g>
+
+  <text x="60" y="108" font-family="Georgia, 'Times New Roman', serif" font-size="52" fill="#F8FAFC" letter-spacing="-0.5">Tejashree Badve</text>
+
+  <rect x="62" y="126" width="300" height="3" rx="1.5" fill="url(#rule)"/>
+
+  <text x="60" y="166" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="19" fill="#F59E0B" letter-spacing="3.5">DATA &amp; AI ENGINEER</text>
+
+  <text x="60" y="202" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" fill="#CBD5E1">Lakehouses, and the agents that query them.</text>
+
+  <g font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#64748B">
+    <text x="60" y="232">Databricks</text>
+    <text x="152" y="232">·</text>
+    <text x="168" y="232">Snowflake</text>
+    <text x="252" y="232">·</text>
+    <text x="268" y="232">Spark</text>
+    <text x="320" y="232">·</text>
+    <text x="336" y="232">LangGraph</text>
+    <text x="424" y="232">·</text>
+    <text x="440" y="232">QLoRA</text>
+  </g>
+</svg>
