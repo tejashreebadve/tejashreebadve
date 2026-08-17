@@ -73,7 +73,7 @@ Data and AI Engineer. Six years across banking, insurance, and healthcare. Curre
 
 ## Projects
 
-### Turning Plain-English HR Questions Into SQL
+### Agentic AI HR Platform
 <a href="https://github.com/tejashreebadve/Agentic_AI_HR"><img src="https://img.shields.io/badge/Agentic__AI__HR-0D1117?style=flat-square&logo=github&logoColor=22D3EE" /></a>
 
 Multi-agent hiring system covering resume shortlisting, structured extraction, and natural-language querying over a seven-table HR schema. Fine-tuned Meta-LLaMA-3.1-8B-Instruct with QLoRA to emit constrained JSON containing a PostgreSQL query plus chart metadata, then merged and deployed the model to Hugging Face Hub. Shortlisting runs as two stages: embedding retrieval first, then a Qwen cross-encoder reranker over the survivors.
@@ -84,7 +84,7 @@ Multi-agent hiring system covering resume shortlisting, structured extraction, a
 
 <div align="center"><img src="./assets/divider.svg?v=2" width="800" alt="" /></div>
 
-### Finding Answers That Live Inside Charts
+### Multimodal RAG System
 
 Retrieval over a macroeconomics report where the answer is frequently in a figure rather than the body text. Sentence-aware chunking with PyMuPDF extraction, BGE-large embeddings in ChromaDB, hybrid BM25 and dense retrieval fused with RRF, a BGE cross-encoder reranking pass, and CLIP image embeddings computed on rendered page crops rather than caption strings. Flat FAISS chosen over IVF and HNSW at this corpus size; fusion weighted 65/35 after tuning.
 
@@ -94,8 +94,8 @@ Retrieval over a macroeconomics report where the answer is frequently in a figur
 
 <div align="center"><img src="./assets/divider.svg?v=2" width="800" alt="" /></div>
 
-### Eight Models, One Honest Comparison
-<sub>Multi-label toxicity classification, Jigsaw Wikipedia comments</sub>
+### Multi-Label Toxicity Classification
+<sub>Jigsaw Wikipedia comments</sub>
 
 A unified benchmarking harness training eight architectures under one preprocessing, thresholding, and metrics pipeline so results stayed comparable across model families: TF-IDF logistic regression, BiLSTM, BiLSTM with attention, DistilBERT, BERT-base, a lexicon-hybrid BERT concatenating lexical features with the [CLS] embedding, a contrastive Siamese BERT, and a softmax-weighted ensemble. Trained with class-weighted BCE, AdamW with warmup and linear decay, gradient clipping, and early stopping on a severely imbalanced dataset. Profiled accuracy against inference cost to specify tiered serving, and quantified identity-term bias ratios across every model.
 
@@ -105,7 +105,7 @@ A unified benchmarking harness training eight architectures under one preprocess
 
 <div align="center"><img src="./assets/divider.svg?v=2" width="800" alt="" /></div>
 
-### Recommendations From 40 Million Steam Reviews
+### GameSphere Recommendation Platform
 <a href="https://github.com/tejashreebadve/BigData_GameSphere_AnalyticsRecommendations"><img src="https://img.shields.io/badge/BigData__GameSphere__AnalyticsRecommendations-0D1117?style=flat-square&logo=github&logoColor=22D3EE" /></a>
 
 A DAG-driven pipeline automating ingestion, sentiment preprocessing, and ALS matrix factorisation across 40M+ Steam reviews, orchestrated in Airflow on Spark over HDFS and containerised with Docker so retraining runs on a schedule rather than by hand. MLflow tracks hyperparameters and metrics across runs, which is what makes comparing one retrain against the last a measurement instead of a guess.
@@ -116,7 +116,7 @@ A DAG-driven pipeline automating ingestion, sentiment preprocessing, and ALS mat
 
 <div align="center"><img src="./assets/divider.svg?v=2" width="800" alt="" /></div>
 
-### Booking Travel Without a Single Point of Failure
+### Kayak Travel Booking Microservices
 <a href="https://github.com/tejashreebadve/236_Kayak"><img src="https://img.shields.io/badge/236__Kayak-0D1117?style=flat-square&logo=github&logoColor=22D3EE" /></a>
 
 Eight independent services behind an API gateway: users, listings, bookings, billing, providers, and admin, communicating over Kafka rather than direct calls so one service failing does not cascade into the rest. Containerised with Docker and deployed to Kubernetes with scripted image builds and port forwarding, covered by end-to-end endpoint and Kafka event tests.
@@ -127,7 +127,7 @@ Eight independent services behind an API gateway: users, listings, bookings, bil
 
 <div align="center"><img src="./assets/divider.svg?v=2" width="800" alt="" /></div>
 
-### Keeping the AI at Arm's Length From the Bookings
+### RedNest Booking Platform with AI Travel Agent
 <a href="https://github.com/tejashreebadve/DATA236"><img src="https://img.shields.io/badge/DATA236-0D1117?style=flat-square&logo=github&logoColor=22D3EE" /></a>
 
 A full-stack Airbnb-style platform where travellers reserve properties and owners manage listings, with an AI travel assistant handling itinerary planning and chat. The agent runs as a separate FastAPI service calling Claude through LangChain, deliberately isolated from the Express application so the LLM layer can fail, time out, or hit a rate limit without taking bookings down with it.
@@ -136,7 +136,7 @@ A full-stack Airbnb-style platform where travellers reserve properties and owner
 
 <div align="center"><img src="./assets/divider.svg?v=2" width="800" alt="" /></div>
 
-### Categories From Logs Nobody Ever Labelled
+### LogSmart System Log Classifier
 <a href="https://github.com/tejashreebadve/LOGSMART_CLASSIFIER"><img src="https://img.shields.io/badge/LOGSMART__CLASSIFIER-0D1117?style=flat-square&logo=github&logoColor=22D3EE" /></a>
 
 Bootstrapping log categories from unlabelled macOS system logs. Regex parsing and normalisation mask numerics and URLs so the model learns structure instead of memorising values, then MiniLM sentence embeddings feed UMAP reduction and KMeans clustering with TF-IDF cluster labelling. DBSCAN and HDBSCAN were evaluated first and abandoned after producing 700+ unstable fragments. Logistic regression selected over Random Forest and LightGBM for near-equivalent performance at lower inference cost, shipped behind a Streamlit app with model caching.
