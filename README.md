@@ -27,58 +27,18 @@ Data and AI Engineer. Six years across banking, insurance, and healthcare. Curre
 
 <div align="center"><img src="./assets/divider.svg" width="800" alt="" /></div>
 
-## Selected Work
-
-> [!IMPORTANT]
-> ### Hiring Agents That Read Between the Lines
-> **A multi-agent recruiting system covering resume screening, structured extraction, and natural-language querying over candidate data.**
->
-> Four open-weight models (Gemma 2, Llama 3.1, Qwen 2.5, Mistral) fine-tuned with QLoRA on 4-bit NF4 quantization and benchmarked head to head, then served through vLLM with paged attention. Retrieval runs on Qdrant with hybrid search. State moves between agents as a typed graph, so a failure traces to a node rather than to a prompt.
->
-> `99% shortlisting accuracy` `73% NL-to-SQL exact match` `sub-4s p95`
->
-> `LangGraph` `QLoRA` `vLLM` `Qdrant` `FastAPI` `Supabase`
-
-> [!TIP]
-> ### Retrieval That Survives Bad Questions
-> **A multimodal RAG pipeline for macroeconomics QA, where the answer often lives in a chart rather than the surrounding text.**
->
-> Dense FAISS vectors fused with BM25 lexical scores to catch the exact-figure queries embeddings miss, CLIP embeddings to bring chart images into the same retrieval space, and a cross-encoder reranking pass over the top-k before generation. LLaMA 3 on Groq keeps the reranking budget affordable.
->
-> `benchmark score 0.28 to 0.42`
->
-> `FAISS` `BM25` `CLIP` `Cross-Encoder` `LLaMA 3` `Groq`
-
-> [!NOTE]
-> ### Eight Hours to Under Three
-> **Risk and liquidity reporting for a derivatives book, rebuilt around how Spark actually moves data rather than how the DAG looked on paper.**
->
-> Diagnosed skew from the physical plan, repartitioned on a salted join key, replaced wide shuffles with broadcast joins where cardinality allowed, and cached the reused intermediate frames. Paired with a Snowflake migration of 70M+ records and Autosys orchestration for the nightly window.
->
-> `batch runtime 8h to under 3h` `70M+ records migrated`
->
-> `PySpark` `Databricks` `Delta Lake` `Snowflake` `Autosys`
-
-> [!WARNING]
-> ### A Lakehouse Fluent in Healthcare
-> **A Medallion-architecture platform for pharmacy benefit and claims data, built so clinical coding stays queryable instead of collapsing into strings.**
->
-> Bronze ingestion from PBM APIs, silver standardization of 835/837 EDI alongside SNOMED CT, CPT, LOINC, and ICD-10 vocabularies, gold star schemas modeled in dbt and orchestrated by Airflow. Power BI semantic models sit on top in Direct Lake mode, with a Microsoft Fabric Copilot agent for self-serve questions.
->
-> `HIPAA-aligned` `oncology and RLT domain`
->
-> `Snowflake` `dbt` `Airflow` `Microsoft Fabric` `Power BI`
-
-<div align="center"><img src="./assets/divider.svg" width="800" alt="" /></div>
-
 <div align="center">
 
 ## Stack
+
+**Languages**
 
 <img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=22D3EE" />
 <img src="https://img.shields.io/badge/SQL-0D1117?style=for-the-badge&logo=postgresql&logoColor=22D3EE" />
 <img src="https://img.shields.io/badge/Scala-0D1117?style=for-the-badge&logo=scala&logoColor=22D3EE" />
 <img src="https://img.shields.io/badge/Java-0D1117?style=for-the-badge&logo=openjdk&logoColor=22D3EE" />
+
+**Data Platform**
 
 <img src="https://img.shields.io/badge/Databricks-0D1117?style=for-the-badge&logo=databricks&logoColor=C084FC" />
 <img src="https://img.shields.io/badge/Snowflake-0D1117?style=for-the-badge&logo=snowflake&logoColor=C084FC" />
@@ -89,12 +49,16 @@ Data and AI Engineer. Six years across banking, insurance, and healthcare. Curre
 <img src="https://img.shields.io/badge/Kafka-0D1117?style=for-the-badge&logo=apachekafka&logoColor=C084FC" />
 <img src="https://img.shields.io/badge/Fabric-0D1117?style=for-the-badge&logo=microsoft&logoColor=C084FC" />
 
+**AI and ML**
+
 <img src="https://img.shields.io/badge/PyTorch-0D1117?style=for-the-badge&logo=pytorch&logoColor=56D4DD" />
 <img src="https://img.shields.io/badge/LangGraph-0D1117?style=for-the-badge&logo=langchain&logoColor=56D4DD" />
 <img src="https://img.shields.io/badge/Hugging_Face-0D1117?style=for-the-badge&logo=huggingface&logoColor=56D4DD" />
 <img src="https://img.shields.io/badge/vLLM-0D1117?style=for-the-badge&logo=lightning&logoColor=56D4DD" />
 <img src="https://img.shields.io/badge/Qdrant-0D1117?style=for-the-badge&logo=qdrant&logoColor=56D4DD" />
 <img src="https://img.shields.io/badge/FAISS-0D1117?style=for-the-badge&logo=meta&logoColor=56D4DD" />
+
+**Cloud and Serving**
 
 <img src="https://img.shields.io/badge/Azure-0D1117?style=for-the-badge&logo=microsoftazure&logoColor=8B949E" />
 <img src="https://img.shields.io/badge/AWS-0D1117?style=for-the-badge&logo=amazonwebservices&logoColor=8B949E" />
@@ -105,40 +69,73 @@ Data and AI Engineer. Six years across banking, insurance, and healthcare. Curre
 
 <img src="./assets/divider.svg" width="800" alt="" />
 
-## Analytics
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=tejashreebadve&theme=react-dark&bg_color=0d1117&color=58a6ff&line=22d3ee&point=bc8cff&area=true&hide_border=true" width="800" alt="Activity graph" />
-
-<br>
-
-<img src="https://ghchart.rshah.org/22d3ee/tejashreebadve" width="800" alt="Contribution grid" />
-
-<br><br>
-
-<table border="0">
-<tr>
-<td>
-<img src="https://github-readme-stats.vercel.app/api?username=tejashreebadve&show_icons=true&hide_border=true&theme=tokyonight&bg_color=0d1117&title_color=c084fc&icon_color=22d3ee&text_color=8b949e&include_all_commits=true" alt="GitHub stats" />
-</td>
-<td>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejashreebadve&layout=compact&hide_border=true&theme=tokyonight&bg_color=0d1117&title_color=c084fc&text_color=8b949e&langs_count=8" alt="Top languages" />
-</td>
-</tr>
-</table>
-
-<br>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=tejashreebadve&theme=tokyonight&hide_border=true&background=0d1117&ring=c084fc&fire=22d3ee&currStreakLabel=c084fc" alt="Streak stats" />
-
-<img src="./assets/divider.svg" width="800" alt="" />
-
 </div>
+
+## Projects
+
+### Agentic AI HR Platform
+<a href="https://github.com/tejashreebadve/Agentic_AI_HR"><img src="https://img.shields.io/badge/Agentic__AI__HR-0D1117?style=flat-square&logo=github&logoColor=22D3EE" /></a>
+
+Multi-agent hiring system covering resume shortlisting, structured extraction, and natural-language querying over a seven-table HR schema. Fine-tuned Meta-LLaMA-3.1-8B-Instruct with QLoRA to emit constrained JSON containing a PostgreSQL query plus chart metadata, then merged and deployed the model to Hugging Face Hub. Shortlisting runs as two stages: embedding retrieval first, then a Qwen cross-encoder reranker over the survivors.
+
+`LangGraph` `QLoRA` `LLaMA 3.1` `vLLM` `Qdrant` `FastAPI` `Supabase`
+
+SQL exact match **0 → 73%** &nbsp;·&nbsp; normalised match **0 → 77%** &nbsp;·&nbsp; 100% JSON parse rate
+
+<br>
+
+### Multimodal RAG for Macroeconomics QA
+
+Retrieval over a macroeconomics report where answers frequently live inside figures rather than body text. Sentence-aware chunking with PyMuPDF extraction, BGE-large embeddings in ChromaDB, hybrid BM25 and dense retrieval fused with RRF, a BGE cross-encoder reranking pass, and CLIP image embeddings computed on rendered page crops rather than caption strings. Flat FAISS chosen over IVF and HNSW at this corpus size; fusion weighted 65/35 after tuning.
+
+`FAISS` `ChromaDB` `BM25` `CLIP` `BGE Reranker` `PyMuPDF`
+
+Kaggle leaderboard **0.2835 → 0.4226**, a 49% relative gain
+
+<br>
+
+### Multi-Label Toxicity Classification
+Jigsaw Wikipedia comments
+
+A unified benchmarking harness training eight architectures under one preprocessing, thresholding, and metrics pipeline so results stayed comparable across model families: TF-IDF logistic regression, BiLSTM, BiLSTM with attention, DistilBERT, BERT-base, a lexicon-hybrid BERT concatenating lexical features with the [CLS] embedding, a contrastive Siamese BERT, and a softmax-weighted ensemble. Trained with class-weighted BCE, AdamW with warmup and linear decay, gradient clipping, and early stopping on a severely imbalanced dataset. Profiled accuracy against inference cost to specify tiered serving, and quantified identity-term bias ratios across every model.
+
+`PyTorch` `Hugging Face` `BERT` `DistilBERT` `CUDA`
+
+Macro-F1 **0.50 → 0.6761** &nbsp;·&nbsp; macro PR-AUC **0.7174**
+
+<br>
+
+### Kayak, Travel Booking Microservices
+<a href="https://github.com/tejashreebadve/236_Kayak"><img src="https://img.shields.io/badge/236__Kayak-0D1117?style=flat-square&logo=github&logoColor=22D3EE" /></a>
+
+Eight independent services behind an API gateway: users, listings, bookings, billing, providers, and admin, communicating over Kafka rather than direct calls so failures stay contained. Containerised with Docker and deployed to Kubernetes with scripted image builds and port forwarding, covered by end-to-end endpoint and Kafka event tests.
+
+`Node.js` `Kafka` `Docker` `Kubernetes` `MongoDB` `React`
+
+<br>
+
+### RedNest, Airbnb Clone with an AI Travel Agent
+<a href="https://github.com/tejashreebadve/DATA236"><img src="https://img.shields.io/badge/DATA236-0D1117?style=flat-square&logo=github&logoColor=22D3EE" /></a>
+
+Full-stack booking platform where travellers reserve properties and owners manage listings, with an AI travel assistant handling itinerary planning and chat. The agent runs as a separate FastAPI service calling Claude through LangChain, keeping the LLM layer independent of the Express application so it can fail without taking bookings down.
+
+`React` `Node.js` `Express` `MySQL` `FastAPI` `LangChain` `Claude`
+
+<br>
+
+### LogSmart, System Log Classifier
+<a href="https://github.com/tejashreebadve/LOGSMART_CLASSIFIER"><img src="https://img.shields.io/badge/LOGSMART__CLASSIFIER-0D1117?style=flat-square&logo=github&logoColor=22D3EE" /></a>
+
+Bootstrapping log categories from unlabelled macOS system logs. Regex parsing and normalisation mask numerics and URLs so the model learns structure instead of memorising values, then MiniLM sentence embeddings feed UMAP reduction and KMeans clustering with TF-IDF cluster labelling. DBSCAN and HDBSCAN were evaluated first and abandoned after producing 700+ unstable fragments. Logistic regression selected over Random Forest and LightGBM for near-equivalent performance at lower inference cost, shipped behind a Streamlit app with model caching.
+
+`Streamlit` `Sentence-Transformers` `MiniLM` `UMAP` `scikit-learn`
+
+23 interpretable log categories from unlabelled input
+
+<div align="center"><img src="./assets/divider.svg" width="800" alt="" /></div>
 
 <!-- START_SECTION:activity -->
 <!-- END_SECTION:activity -->
-
-<!-- START_SECTION:content -->
-<!-- END_SECTION:content -->
 
 <div align="center">
 <sub><code>SYSTEM.READY // tejashreebadve</code></sub>
